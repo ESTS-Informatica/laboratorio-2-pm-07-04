@@ -33,15 +33,9 @@ public class PropertyTest
     
     @Test
     public void testToString(){
-
-        System.out.println("Descricao :" + property1.getDescription());
-        System.out.println("Preco :" + property1.getPrice());
-        
-        assertEquals("Descricao : T3 Monte Belo\n" + "Preco : 150000.0 Euros", property1.toString());
+        assertEquals("Descricao     : T3 Monte Belo\nPreco      : 150000.0 Euros", property1.toString());
     }
     
-
-
     /**
      * Define a 'fixture' do teste.
      *
