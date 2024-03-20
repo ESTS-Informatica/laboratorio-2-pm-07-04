@@ -47,7 +47,7 @@ public class User {
      * @return This user name.
      */
     public String getName() {
-        return null;
+        return name;
     }
 
     /**
@@ -67,7 +67,7 @@ public class User {
      * @return This user phone.
      */
     public String getPhone() {
-        return null;
+        return phone;
     }
 
     /**
@@ -87,7 +87,7 @@ public class User {
      * @return This user E-mail.
      */
     public String getEmail() {
-        return null;
+        return email;
     }
 
     /**
