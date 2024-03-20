@@ -118,7 +118,12 @@ public class Company {
      * @return true If the registration succeeds, false otherwise.
      */
     public boolean registerSell(Sell sell) {
-        return true;         // dummy implementation
+        if(sell != null && !sells.contains(sell)){
+             sells.add(sell);
+             return true;
+        }
+        
+        return false;
     }
 
     /**
@@ -130,7 +135,13 @@ public class Company {
      * @return true If the request succeeds, false otherwise.
      */
     public boolean createSell(User client, User seller, Property property) {
-        return true;         // dummy implementation
+        if((clients.contains(client) && sellers.contains(seller)) && properties.contains(property)){
+            Sell sell = new Sell(client, seller, property);
+            registerSell(sell);
+            return true;
+        }
+        
+        return false;
     }
 
     /**
@@ -140,7 +151,16 @@ public class Company {
      * @return The total number of sells in the year.
      */
     public int calculateSellsOfTheYear(int year) {
-        return 0;         // dummy implementation
+        int counter = 0;
+        
+        if(year >= 0){
+            for(Sell sell : sells){
+                if(sell.getDate().getYear() == year)
+                    counter++;
+            }
+        }
+        
+        return counter;
     }
 
     /**

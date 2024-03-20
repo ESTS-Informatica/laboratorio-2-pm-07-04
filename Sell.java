@@ -78,7 +78,7 @@ public class Sell {
      * @return The sell date.
      */
     public LocalDate getDate() {
-        return null;
+        return date;
     }
 
     /**
