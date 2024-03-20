@@ -20,9 +20,10 @@ public class Property {
      * @param price The property price.
      */
     public Property(String description, double price) {
-        id = null;
         this.description = description;
         this.price = price;
+        this.id = " ";
+    
     }
 
     /**
@@ -45,7 +46,7 @@ public class Property {
      * @param description The new description. Must not be null.
      */
     public void setDescription(String description) {
-
+    
     }
 
     /**
@@ -66,6 +67,6 @@ public class Property {
 
     @Override
     public String toString() {
-        return "Descricao   : " + getDescription() + "\nPreco       : " + getPrice();
+        return "Descricao : " + getDescription() +"\n" + "Preco : " + getPrice()+ " Euros";
     }
 }
