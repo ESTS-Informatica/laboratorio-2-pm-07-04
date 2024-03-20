@@ -38,7 +38,7 @@ public class User {
      * @return This user id.
      */
     public String getId() {
-        return this.id;
+        return null;
     }
 
     /**
@@ -47,7 +47,7 @@ public class User {
      * @return This user name.
      */
     public String getName() {
-        return this.name;
+        return null;
     }
 
     /**
@@ -67,7 +67,7 @@ public class User {
      * @return This user phone.
      */
     public String getPhone() {
-        return this.phone;
+        return null;
     }
 
     /**
@@ -87,7 +87,7 @@ public class User {
      * @return This user E-mail.
      */
     public String getEmail() {
-        return this.email;
+        return null;
     }
 
     /**
@@ -103,7 +103,9 @@ public class User {
 
     @Override
     public String toString() {
-        return this.name + "\t(" + this.phone + ")\t" + this.email;
+        return null; 
+        
+        //this.name + "\t(" + this.phone + ")\t" + this.email;
     }
 
     /**

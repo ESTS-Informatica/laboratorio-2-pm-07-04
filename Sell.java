@@ -43,7 +43,7 @@ public class Sell {
      * @return This sell id.
      */
     public String getId() {
-        return this.id;
+        return null;
     }
 
     /**
@@ -52,7 +52,7 @@ public class Sell {
      * @return The client of this sell.
      */
     public User getClient() {
-        return this.client;
+        return null;
     }
     /**
      * Get the seller.
@@ -60,7 +60,7 @@ public class Sell {
      * @return The seller of this sell.
      */
     public User getSeller() {
-        return this.seller;
+        return null;
     }
 
     /**
@@ -69,7 +69,7 @@ public class Sell {
      * @return The sold property.
      */
     public Property getProperty() {
-        return this.property;
+        return null;
     }
 
     /**
@@ -78,7 +78,7 @@ public class Sell {
      * @return The sell date.
      */
     public LocalDate getDate() {
-        return this.date;
+        return null;
     }
 
     /**
@@ -95,8 +95,10 @@ public class Sell {
     @Override
     public String toString() {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MMM/YYYY");
-        return "Data da venda \t: " + this.date.format(formatter) + "\n"
-                + this.property + "\n";
+        return null;
+        
+        /*"Data da venda \t: " + this.date.format(formatter) + "\n"
+                + this.property + "\n";*/
     }
 
 }

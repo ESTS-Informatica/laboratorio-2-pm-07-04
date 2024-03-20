@@ -23,6 +23,7 @@ public class Property {
         this.description = description;
         this.price = price;
         this.id = " ";
+    
     }
 
     /**

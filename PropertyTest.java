@@ -14,6 +14,7 @@ import org.junit.jupiter.api.Test;
 public class PropertyTest
 {
     private Property property1 = new Property("T3 Monte Belo", 150000.0);
+ 
     
     /**
      * Construtor default para a classe de teste PropertyTest
@@ -24,19 +25,22 @@ public class PropertyTest
     
     @Test
     public void testConstructor(){
+
         assertEquals("T3 Monte Belo", property1.getDescription());
         assertEquals(150000.0, property1.getPrice());
-       
+    
     }
     
     @Test
     public void testToString(){
+
         System.out.println("Descricao :" + property1.getDescription());
         System.out.println("Preco :" + property1.getPrice());
         
         assertEquals("Descricao : T3 Monte Belo\n" + "Preco : 150000.0 Euros", property1.toString());
     }
     
+
 
     /**
      * Define a 'fixture' do teste.
